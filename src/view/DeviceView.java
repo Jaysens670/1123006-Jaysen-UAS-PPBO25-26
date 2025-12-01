@@ -67,21 +67,21 @@ public class DeviceView {
         }
 
         String versi = CLIUtils.readString("Masukkan versi");
-        OperatingSystem sistemOperasi = null;
+        OperatingSystem OperatingSystem = null;
 
         switch (pilihanOS) {
             case 1:
-                sistemOperasi = new Windows(versi);
+                OperatingSystem = new Windows(versi);
                 break;
             case 2:
-                sistemOperasi = new Ubuntu(versi);
+                OperatingSystem = new Ubuntu(versi);
                 break;
             case 3:
-                sistemOperasi = new Fedora(versi);
+                OperatingSystem = new Fedora(versi);
                 break;
         }
 
-        Device device = new Device(nama, sistemOperasi);
+        Device device = new Device(nama, OperatingSystem);
         controller.addDevice(device);
         System.out.println("Device added successfully.");
     }
