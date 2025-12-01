@@ -1,21 +1,21 @@
 package model;
 
 public class Device {
-    private String ownerName;
+    private String user;
     private OperatingSystem os;
 
-    public Device(String ownerName, OperatingSystem os) {
-        this.ownerName = ownerName;
+    public Device(String user, OperatingSystem os) {
+        this.user = user;
         this.os = os;
     }
 
-    public Device(String ownerName) {
-        this.ownerName = ownerName;
+    public Device(String user) {
+        this.user = user;
         this.os = null;
     }
 
-    public String getOwnerName() {
-        return ownerName;
+    public String getUser() {
+        return user;
     }
 
     public OperatingSystem getOs() {

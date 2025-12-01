@@ -94,7 +94,7 @@ public class DeviceView {
         
         System.out.println("--- Booting Devices ---");
         for (Device device : daftarDevice) {
-            System.out.println(device.getOwnerName() + " booted: " + device.getOs().getBootInfo());
+            System.out.println(device.getUser() + " booted: " + device.getOs().getBootInfo());
         }
     }
 
@@ -108,7 +108,7 @@ public class DeviceView {
         
         System.out.println("--- Devices Sorted by OS ---");
         for (Device device : daftarTerurut) {
-            System.out.println(device.getOwnerName() + " booted: " + device.getOs().getBootInfo());
+            System.out.println(device.getUser() + " booted: " + device.getOs().getBootInfo());
         }
     }
 }
